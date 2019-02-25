@@ -6,13 +6,12 @@
 
 let footer = document.querySelector('footer');
 
-footer.addEventListener('click',posterOnTheConsole);
-
 function posterOnTheConsole()
 {
     console.log("clique");
 }
 
+footer.addEventListener('click',posterOnTheConsole);
 /* -------------------------------------------------------------------------------------------------------- */
 
 // Fonctionnalité 1bis :
@@ -22,12 +21,27 @@ function posterOnTheConsole()
 let footerbis = document.querySelector('footer');
 let counter = 1;
 
-footerbis.addEventListener('click',posterOnTheConsoleBis);
-
 function posterOnTheConsoleBis()
 {
     console.log(`clique ${counter}`);
     counter++;
 }
+
+footerbis.addEventListener('click',posterOnTheConsoleBis);
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+// Fonctionnalité 2 :
+
+/* -------------------------------------------------------------------------------------------------------- */
+let menu = document.getElementById('navbarHeader')
+let btn = document.querySelector('.navbar-toggler-icon');
+
+function openOrCloseMenu() 
+{
+    menu.classList.toggle("collapse");
+}
+
+btn.addEventListener('click', openOrCloseMenu);
 
 /* -------------------------------------------------------------------------------------------------------- */
