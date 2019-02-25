@@ -147,8 +147,6 @@ let parent = document.getElementsByClassName("row")[1];
 
 function move_right()
 {
-    console.log(parent.firstChild.nextElementSibling);
-    console.log(parent.lastChild.previousElementSibling);
     parent.insertBefore(parent.lastChild.previousElementSibling, parent.firstChild.nextElementSibling);
 }
 
