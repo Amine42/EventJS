@@ -147,7 +147,11 @@ let parent = document.getElementsByClassName("row")[1];
 
 function move_right()
 {
-    parent.insertBefore(parent.lastChild.previousElementSibling, parent.firstChild.nextElementSibling);
+    console.log(parent.firstChild);
+    console.log(parent.lastChild);
+    // console.log(parent.firstChild.nextElementSibling);
+    // console.log(parent.lastChild.previousElementSibling);
+    // parent.insertBefore(parent.lastChild.previousElementSibling, parent.firstChild.nextElementSibling);
 }
 
 button_right[0].addEventListener("click", move_right);
