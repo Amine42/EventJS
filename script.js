@@ -4,21 +4,21 @@
 
 /* -------------------------------------------------------------------------------------------------------- */
 
-let footer = document.querySelector('footer');
+let footer = document.querySelector("footer");
 
 function posterOnTheConsole()
 {
     console.log("clique");
 }
 
-footer.addEventListener('click',posterOnTheConsole);
+footer.addEventListener("click",posterOnTheConsole);
 /* -------------------------------------------------------------------------------------------------------- */
 
 // Fonctionnalité 1bis :
 
 /* -------------------------------------------------------------------------------------------------------- */
 
-let footerbis = document.querySelector('footer');
+let footerbis = document.querySelector("footer");
 let counter = 1;
 
 function posterOnTheConsoleBis()
@@ -27,7 +27,7 @@ function posterOnTheConsoleBis()
     counter++;
 }
 
-footerbis.addEventListener('click',posterOnTheConsoleBis);
+footerbis.addEventListener("click",posterOnTheConsoleBis);
 
 /* -------------------------------------------------------------------------------------------------------- */
 
@@ -35,15 +35,15 @@ footerbis.addEventListener('click',posterOnTheConsoleBis);
 
 /* -------------------------------------------------------------------------------------------------------- */
 
-let menu = document.getElementById('navbarHeader');
-let btn = document.querySelector('.navbar-toggler-icon');
+let menu = document.getElementById("navbarHeader");
+let btn = document.querySelector(".navbar-toggler-icon");
 
 function openOrCloseMenu() 
 {
     menu.classList.toggle("collapse");
 }
 
-btn.addEventListener('click', openOrCloseMenu);
+btn.addEventListener("click", openOrCloseMenu);
 
 /* -------------------------------------------------------------------------------------------------------- */
 
@@ -51,14 +51,37 @@ btn.addEventListener('click', openOrCloseMenu);
 
 /* -------------------------------------------------------------------------------------------------------- */
 
-let text = document.querySelector('.card-text');
-let edit = document.querySelector('.btn-outline-secondary');
+let text = document.getElementById("text-1");
+let edit = document.getElementById("edit-1");
 
-function color() 
+function colorRed() 
 {
-    text.style.color = "#FF0000";
+    text.style.color = "red";
 }
 
-edit.addEventListener('click', color);
+edit.addEventListener("click", colorRed);
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+// Fonctionnalité 4 :
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+let text2 = document.getElementById("text-2");
+let edit2 = document.getElementById("edit-2");
+
+function colorGreen() 
+{
+    if (text2.style.color === "green")
+    {
+        text2.style.color = "";
+    }
+    else
+    {
+        text2.style.color = "green";
+    }
+}
+
+edit2.addEventListener("click", colorGreen);
 
 /* -------------------------------------------------------------------------------------------------------- */
