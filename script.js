@@ -141,3 +141,15 @@ for(let i = 0; i < cards.length; i++)
 // Fonctionnalité 7 :
 
 /* -------------------------------------------------------------------------------------------------------- */
+
+let button_right = document.getElementsByClassName("btn-secondary");
+let parent = document.getElementsByClassName("row")[1];
+
+function move_right()
+{
+    console.log(parent.firstChild.nextElementSibling);
+    console.log(parent.lastChild.previousElementSibling);
+    parent.insertBefore(parent.lastChild.previousElementSibling, parent.firstChild.nextElementSibling);
+}
+
+button_right[0].addEventListener("click", move_right);
