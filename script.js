@@ -91,13 +91,20 @@ edit2.addEventListener("click", colorGreen);
 /* -------------------------------------------------------------------------------------------------------- */
 
 let navbar = document.querySelector("header");
-//let css = document.getElementsByTagName('link')
+let css;
 
 function atomic()
 {
-    document.getElementById("boostrapcss").disabled = true;
+    if (css === false)
+    {
+        css = document.getElementById("boostrapcss").disabled = true;
+    }
+    else
+    {
+        css = document.getElementById("boostrapcss").disabled = false;
+    }
 }
 
-navbar.addEventListener("click",atomic);
+navbar.addEventListener("dblclick",atomic);
 
 /* -------------------------------------------------------------------------------------------------------- */
