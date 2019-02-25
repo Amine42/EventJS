@@ -85,3 +85,19 @@ function colorGreen()
 edit2.addEventListener("click", colorGreen);
 
 /* -------------------------------------------------------------------------------------------------------- */
+
+// Fonctionnalité 5 :
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+let navbar = document.querySelector("header");
+//let css = document.getElementsByTagName('link')
+
+function atomic()
+{
+    document.getElementById("boostrapcss").disabled = true;
+}
+
+navbar.addEventListener("click",atomic);
+
+/* -------------------------------------------------------------------------------------------------------- */
