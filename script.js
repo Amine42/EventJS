@@ -34,7 +34,8 @@ footerbis.addEventListener('click',posterOnTheConsoleBis);
 // Fonctionnalité 2 :
 
 /* -------------------------------------------------------------------------------------------------------- */
-let menu = document.getElementById('navbarHeader')
+
+let menu = document.getElementById('navbarHeader');
 let btn = document.querySelector('.navbar-toggler-icon');
 
 function openOrCloseMenu() 
@@ -43,5 +44,21 @@ function openOrCloseMenu()
 }
 
 btn.addEventListener('click', openOrCloseMenu);
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+// Fonctionnalité 3 :
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+let text = document.querySelector('.card-text');
+let edit = document.querySelector('.btn-outline-secondary');
+
+function color() 
+{
+    text.style.color = "#FF0000";
+}
+
+edit.addEventListener('click', color);
 
 /* -------------------------------------------------------------------------------------------------------- */
